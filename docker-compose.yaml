@@ -1,0 +1,10 @@
+services:
+  app:
+    profiles:
+      - dev
+    build: .
+    container_name: appa-product
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/go/src/
