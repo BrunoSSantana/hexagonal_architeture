@@ -34,7 +34,7 @@ type ProductReader interface {
 type ProductWriter interface {
 	Save(product ProductInterface) (ProductInterface, error)
 }
-type ProductPersistence interface {
+type ProductPersistenceInterface interface {
 	ProductReader
 	ProductWriter
 }
