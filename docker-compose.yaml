@@ -1,9 +1,7 @@
 services:
   app:
-    profiles:
-      - dev
     build: .
-    container_name: appa-product
+    container_name: app-product
     ports:
       - "9000:9000"
     volumes:
