@@ -41,7 +41,7 @@ func Run(service application.ProductServiceInterface, action string, productId s
 			return result, err
 		}
 
-		result = fmt.Sprintf("Product %s has been disable.", res.GetName())
+		result = fmt.Sprintf("Product %s has been disabled.", res.GetName())
 	default:
 		res, err := service.Get(productId)
 		if err != nil {
