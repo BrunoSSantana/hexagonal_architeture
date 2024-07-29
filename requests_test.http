@@ -1,0 +1,12 @@
+POST http://localhost:8080/product
+content-type: application/json
+
+{
+    "name": "sample",
+    "price": 120
+}
+
+###
+
+PATCH http://localhost:8080/product/0ebe2ed8-4f15-4995-a768-26756e0ef8e2/disable
+content-type: application/json
